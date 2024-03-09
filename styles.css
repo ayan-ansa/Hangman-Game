@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #f97794, #6200ff, #3498db);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.hangman {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+}
+
+.right-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#heading {
+    padding-top: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+#message {
+    color: #fff;
+    font-weight: 500;
+}
+
+.buttons {
+    margin-top: 1rem;
+    width: 40rem;
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+   
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 1.1rem;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #6200ff;
+    transition: 0.3s all linear;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+ul {
+
+    display: flex;
+    gap: 1.2rem;
+}
+
+ul li {
+    position: relative;
+    width: 2.8rem;
+    height: 3px;
+    border-radius: 4px;
+    list-style: none;
+    background: #fff;
+}
+
+span {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    color: #f97794;
+    font-size: 1.8rem;
+
+}
+
+.letter-container {
+    margin-top: 5rem;
+}
+
+.parts {
+    background: #fff;
+    position: absolute;
+    display: none;
+}
+.show{
+    display: block;
+}
+
+#part1 {
+    bottom: 15%;
+    height: 8px;
+    width: 80%;
+}
+
+#part2 {
+    bottom: 15%;
+    height: 27.3rem;
+    width: 8px;
+}
+
+#part3 {
+    top: 11%;
+    width: 45%;
+    height: 8px;
+}
+#part4{
+    top: 12%;
+    left: 43%;
+    width: 4px;
+    height: 3.5rem;
+}
+#part5 {
+    left: 37%;
+    top: 20%;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+
+}
+#part6 {
+    top: 29%;
+    left: 43%;
+    width: 6px;
+    height: 7.2rem;
+}
+
+#part7 {
+    top: 27%;
+    left: 35%;
+    width: 6px;
+    height: 5rem;
+    transform: rotate(-55deg);   
+}
+#part8 {
+    top: 27%;
+    width: 6px;
+    height: 5rem;
+    left: 50%;
+    transform: rotate(55deg);
+
+}
+
+#part9 {
+    width: 6px;
+    height: 5rem;
+    top: 45%;
+    left: 35%;
+    transform: rotate(55deg);
+}
+
+#part10 {
+    width: 6px;
+    height: 5rem;
+    transform: rotate(-55deg);
+    top: 45%;
+    left: 50%;
+}
+.msg{
+    position: absolute;
+    top: 39%;
+    left: 30%;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.btn{
+    position: absolute;
+    top:55%;
+    left: -25%;
+    padding: 8px 12px;
+    font-size: 1.1rem;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #6200ff;
+    transition: 0.3s all linear;
+    display: none;
+}
+.btn:hover {
+    background: green;
+    color: #fff;
+}
+.showBtn{
+    display: block;
+}
